@@ -73,3 +73,67 @@ Quelques statistiques pour notre itération (19/07/2024) :
 
 Cela donne un total de `2024/30000` datasets détectés comme genrés (6.75%)
 Si on ne considère que les datasets détectés comme concernant des personnes : `1054/4444` datasets genrés (23.72%)
+
+## Annexes
+
+Les mots-clés utilisés pour la détection des datasets genrés sont :
+
+```py
+EXACT_GENDER_DETECTION_KEYWORDS = [
+    "h",
+    "m",
+    "man",
+    "men",
+]  # Keywords that need to be an exact match and not just a substring
+
+GENDER_DETECTION_KEYWORDS = [
+    "homme",
+    "hommes",
+    "femme",
+    "femmes",
+    "woman",
+    "women",
+    "sexe",
+    "sexes",
+    "sex",
+    "genre",
+    "genres",
+    "gender",
+    "fille",
+    "filles",
+    "garçon",
+    "garçons",
+    "girl",
+    "girls",
+    "boy",
+    "boys",
+    "non binaire",
+]
+```
+
+Les mots-clés utilisés pour la détection des datasets concernant des personnes physiques sont :
+
+```py
+PERSON_DETECTION_KEYWORDS = [
+    "person",
+    "people",
+    "personne",
+    "personnes",
+    "individu",
+    "individus",
+    "individual",
+    "individuals",
+    "citoyen",
+    "citoyens",
+    "citoyenne",
+    "citoyennes",
+    "citizen",
+    "citizens",
+    "âge",
+    "date de naissance",
+    "date of birth",
+    "salaire",
+    "salary",
+    "income",
+]
+```
