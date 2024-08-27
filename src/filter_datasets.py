@@ -213,9 +213,12 @@ def format_dataset_csv(datasets_uids, datasets):
 
         dataframe_data.append(
             {
-                "dataset_uid": dataset["dataset_uid"],
+                "id": dataset["dataset_id"],
+                "url": f"https://data.opendatasoft.com/explore/dataset/{dataset['dataset_id']}/information/",
                 "title": dataset["metas"]["default"]["title"],
                 "description": dataset["metas"]["default"]["description"],
+                "theme": dataset["metas"]["default"]["theme"],
+                "publisher": dataset["metas"]["default"]["publisher"],
             }
         )
 
