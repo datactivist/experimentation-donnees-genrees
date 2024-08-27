@@ -219,6 +219,7 @@ def format_dataset_csv(datasets_uids, datasets):
                 "description": dataset["metas"]["default"]["description"],
                 "theme": dataset["metas"]["default"]["theme"],
                 "publisher": dataset["metas"]["default"]["publisher"],
+                "keywords": dataset["metas"]["default"]["keyword"],
             }
         )
 
